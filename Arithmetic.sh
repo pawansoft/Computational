@@ -29,3 +29,9 @@ operations[3]=$Compute3
 operations[4]=$Compute4
 
 echo ${operations[@]}
+
+for((count=1; count <= 4; count++))
+do
+	arr[$count]=${operations[$count]}
+done
+echo ${arr[@]}

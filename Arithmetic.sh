@@ -4,6 +4,8 @@ read -p "Enter the first number" num1
 read -p "Enter the Second number" num2
 read -p "Enter the thierd number" num3
 
+declare -A operations
+
 Compute1=$(($num1 + $num2 * $num3))
 echo "$num1 + $num2 * $num3 = $Compute1"
 
@@ -20,3 +22,10 @@ echo "$num1 + $num2 / $num3 = $Compute3 "
 Compute4=`echo "scale=1;$num1 % $num2 + $num3" | bc`
 
 echo "$num1 % $num2 + $num3 = $Compute4"
+
+operations[1]=$Compute1
+operations[2]=$Compute2
+operations[3]=$Compute3
+operations[4]=$Compute4
+
+echo ${operations[@]}

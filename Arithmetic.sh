@@ -13,4 +13,10 @@ echo "$num1 * $num2 + $num3 = $Compute2"
 
 Compute3=`echo "scale=1;$num1 + $num2 / $num3" | bc`
 
-echo "$num1 + $num2 / $num3 = $Compute3"
+echo "$num1 + $num2 / $num3 = $Compute3 "
+
+
+
+Compute4=`echo "scale=1;$num1 % $num2 + $num3" | bc`
+
+echo "$num1 % $num2 + $num3 = $Compute4"

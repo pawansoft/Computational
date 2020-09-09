@@ -5,4 +5,8 @@ read -p "Enter the Second number" num2
 read -p "Enter the thierd number" num3
 
 Compute1=$(($num1 + $num2 * $num3))
-echo $Compute1
+echo "$num1 + $num2 * $num3 = $Compute1"
+
+Compute2=$(($num1 * $num2 + $num3))
+
+echo "$num1 * $num2 + $num3 = $Compute2"

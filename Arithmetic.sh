@@ -34,4 +34,9 @@ for((count=1; count <= 4; count++))
 do
 	arr[$count]=${operations[$count]}
 done
-echo ${arr[@]}
+echo "Actual Array is : ${arr[@]}"
+
+arr2=($(echo ${arr[*]} | tr " " "\n" | sort -n))
+
+echo "Shorting in Asecending Order"
+echo "Shorted Array is : ${arr2[@]}"

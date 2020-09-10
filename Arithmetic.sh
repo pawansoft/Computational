@@ -38,5 +38,12 @@ echo "Actual Array is : ${arr[@]}"
 
 arr2=($(echo ${arr[*]} | tr " " "\n" | sort -n))
 
+arr3=($(echo ${arr[*]} | tr " " "\n" | sort -nr ))
+
+
+echo "Shorting in Descending Order"
+echo "Shorted Array is : ${arr3[@]}"
+
+
 echo "Shorting in Asecending Order"
 echo "Shorted Array is : ${arr2[@]}"
